@@ -117,6 +117,11 @@ body {
     position: absolute;
     bottom: 9px;
     right: 7px;
+    display: flex;
+}
+
+ion-icon {
+    display: none;
 }
 
 .margem-direita {
@@ -138,7 +143,7 @@ body {
     align-items: center;
 }
 
-.fechar-pedido button {
+button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -151,4 +156,8 @@ body {
     background-color: #CBCBCB;
     padding-left: 80px;
     padding-right: 80px;
+}
+
+.verde {
+    background-color: #32B72F;
 }
