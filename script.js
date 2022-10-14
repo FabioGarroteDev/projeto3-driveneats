@@ -68,13 +68,19 @@ function finalizarPedido() {
 }
 
 function fazerPedido() {
-    const valorTotal = pratoPreco + bebidaPreco + sobremesaPreco
+    let valorTotal = pratoPreco + bebidaPreco + sobremesaPreco
+    valorTotal = valorTotal.toFixed(2)
     if (pratoSelecionado && bebidaSelecionado && sobremesaSelecionado) {
+        const nome = prompt('Qual o seu nome?')
+        const endereco = prompt('Qual o seu endereço?')
         const mensagem = `Olá, gostaria de fazer o pedido:
         - Prato: ${pratoEscolhido} 
         - Bebida: ${bebidaEscolhido} 
         - Sobremesa: ${sobremesaEscolhido} 
-        Total: R$ ${valorTotal}`
+        Total: R$ ${valorTotal}
+        
+        Nome: ${nome}
+        Endereço: ${endereco}`
         const url = `https://wa.me/5511964287262?text=${encodeURIComponent(mensagem)}`;
         window.open(url);
     }
