@@ -6,37 +6,45 @@ let bebidaSelecionado;
 let sobremesaSelecionado;
 
 function selecionarPrato(x) {
-    pratoSelecionado = prato.querySelector('.selecionado')
     if (pratoSelecionado) {
         pratoSelecionado.classList.remove('selecionado')
         x.classList.add('selecionado')
     } else {
         x.classList.add('selecionado')
+        pratoSelecionado = prato.querySelector('.selecionado')
     }
+    finalizarPedido()
 }
 
 function selecionarBebida(x) {
-    bebidaSelecionado = bebida.querySelector('.selecionado')
     if (bebidaSelecionado) {
         bebidaSelecionado.classList.remove('selecionado')
         x.classList.add('selecionado')
     } else {
         x.classList.add('selecionado')
+        bebidaSelecionado = bebida.querySelector('.selecionado')
     }
+    finalizarPedido()
 }
 
 function selecionarSobremesa(x) {
-    sobremesaSelecionado = sobremesa.querySelector('.selecionado')
     if (sobremesaSelecionado) {
         sobremesaSelecionado.classList.remove('selecionado')
         x.classList.add('selecionado')
     } else {
         x.classList.add('selecionado')
+        sobremesaSelecionado = sobremesa.querySelector('.selecionado')
     }
+    finalizarPedido()
 }
 
 function finalizarPedido() {
-    if (o) {
-
+    const finalizar = document.querySelector('button')
+    if (pratoSelecionado && bebidaSelecionado && sobremesaSelecionado) {
+        finalizar.classList.add('verde')
+        finalizar.innerHTML = 'Fechar pedido'
     }
 }
+
+
+
