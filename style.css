@@ -97,7 +97,7 @@ body {
     color: #a6a6a6;
 }
 
-.card p:nth-child(4) {
+.card h3 {
     font-weight: 400;
     font-size: 16px;
 }
