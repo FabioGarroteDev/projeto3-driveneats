@@ -34,7 +34,7 @@
                     <img src="./imagens/franguinho.jpg">
                     <p>Franguinho Fit</p>
                     <p>Arroz, frango grelhado e uma saladinha saborosa</p>
-                    <h3>R$ <span>19.90</span></h3>
+                    <h3>R$ <span>15.50</span></h3>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="prato card" onclick="selecionarPrato(this)">
@@ -74,7 +74,7 @@
                     <img src="./imagens/coca-lata.jpg">
                     <p>Coquinha gelada</p>
                     <p>Lata 350ml</p>
-                    <h3>R$ <span>5.90</span></h3>
+                    <h3>R$ <span>9.90</span></h3>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="bebida card margem-direita" onclick="selecionarBebida(this)">
@@ -93,7 +93,7 @@
                     <img src="./imagens/mousse.jpg">
                     <p>Mousse</p>
                     <p>Mousse cremoso com raspas de chocolate</p>
-                    <h3>R$ <span>8.50</span></h3>
+                    <h3>R$ <span>7.60</span></h3>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="sobremesa card" onclick="selecionarSobremesa(this)">
@@ -120,8 +120,33 @@
             </div>
         </div>
     </div>
+    <div class="fundo-opaco escondido">
+        <div class="card-flutuante escondido">
+            <h1>Confirme seu pedido</h1>
+            <div class="valores">
+                <div>
+                    <p>batata</p>
+                    <h3>arroz</h3>
+                </div>
+                <div>
+                    <p>batata</p>
+                    <h3>arroz</h3>
+                </div>
+                <div>
+                    <p>batata</p>
+                    <h3>arroz</h3>
+                </div>
+                <div>
+                    <p>TOTAL</p>
+                    <h3>arroz</h3>
+                </div>
+            </div>
+            <button onclick="fazerPedido()">Tudo certo, pode pedir!</button>
+            <h2 onclick="cancelar()">Cancelar</h2>
+        </div>
+    </div>
 
-    <div class="fechar-pedido" onclick="fazerPedido()">
+    <div class="fechar-pedido" onclick="revisarPedido()">
         <button>Selecione os 3 itens para fechar o pedido</button>
     </div>
 
