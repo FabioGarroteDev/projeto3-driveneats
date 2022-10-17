@@ -112,7 +112,7 @@ function fazerPedido() {
     Nome: ${nome}
     Endereço: ${endereco}`
     const url = `https://wa.me/5511964287262?text=${encodeURIComponent(mensagem)}`;
-    window.open(url);
+    window.location.href = url;
 }
 
 function cancelar() {
